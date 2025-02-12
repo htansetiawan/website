@@ -891,14 +891,26 @@ body {
 
 /* Footer */
 .footer {
-  background: var(--color-primary);
-  color: var(--color-white);
   padding: calc(var(--spacing-unit) * 6) 0;
   margin-top: calc(var(--spacing-unit) * 12);
+  background-color: var(--color-background);
+  border-top: 1px solid var(--color-border);
 }
 
-.footer p {
-  opacity: 0.9;
+.footer-content {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+.footer-content a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Design */

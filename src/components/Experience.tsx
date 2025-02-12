@@ -3,6 +3,30 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
     {
+      company: "Amazon Rufus",
+      role: "Principal Engineer (L7)",
+      period: "2023 - Present",
+      details: [
+        "Leading AI Infrastructure, Tools and Frameworks that powers Amazon Rufus.",
+        "Designed and developed Rufus RAG query execution compiler and runtime.",
+        "Developed Rufus Python Framework for L1-system orchestrated Experiments."
+      ]
+    },
+    {
+      company: "Google",
+      location: "Mountain View, CA",
+      role: "Technical Lead",
+      period: "2016 - 2023",
+      details: [
+        "Leading key projects, research and technologies within Google Cloud, Youtube, Technical Infrastructure and Google Brain in areas of Ads, Cloud Service & Infrastructure, Storage and Machine Learning",
+        "Led small team of senior engineers developing Embedding API of Google LLM from ground up as part of high visibility 'code red' LLM initiative under VP of Engineering OKR",
+        "Led Modeling Framework of Document AI with Google Next '22 announcement of Visual Element (checkboxes, signature, barcode, forms) and LLM infrastructure of Google Cloud Document AI platform",
+        "Improved Youtube Ads modeling optimization with +$115M YoY revenue, 0.1% pCTR increase",
+        "Led initiative in Google Brain (Tensorflow Runtime) open-sourcing TPU kernel and runtime, and led cross Google Research and Search on optimizing NLU model for Dialogue system for Google Assistant",
+        "Incubated first of its kind Google Cloud ML Cloud API - Cloud Video Intelligence API using Deep Learning for analyzing video contents at scale"
+      ]
+    },
+    {
       company: "CANOTIC INC (rebranded as super.ai)",
       location: "Bellevue, WA",
       role: "Founder/CTO/Investor",
@@ -84,11 +108,13 @@ const Experience = () => {
       {experiences.map((exp, index) => (
         <article key={index} className="experience-item">
           <header className="experience-header">
-            <h3 className="experience-role">{exp.role}</h3>
-            <div className="experience-meta">
-              <span className="experience-company">{exp.company}</span>
-              {exp.location && <span className="experience-location"> • {exp.location}</span>}
-              <span className="experience-period"> • {exp.period}</span>
+            <div className="experience-main">
+              <h3 className="experience-role">{exp.role}</h3>
+              <div className="experience-meta">
+                <span className="experience-company">{exp.company}</span>
+                {exp.location && <span className="experience-location"> • {exp.location}</span>}
+                <span className="experience-period"> • {exp.period}</span>
+              </div>
             </div>
           </header>
           <ul className="experience-details">

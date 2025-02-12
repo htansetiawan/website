@@ -3,23 +3,39 @@ import React from 'react';
 const Education = () => {
   const education = [
     {
-      degree: "Master of Science in Computer Science",
-      school: "University of Washington",
-      location: "Seattle, WA",
-      period: "2004 - 2006",
-      details: [
-        "Thesis: Distributed Computing Infrastructure for Training Large-Scale Neural Networks",
-        "Focus: Distributed Systems, Machine Learning"
-      ]
+      degree: "Executive Master of Business Administration",
+      school: "Massachusetts Institute of Technology",
+      location: "Cambridge, MA",
+      period: "2024",
+      details: []
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of Washington",
-      location: "Seattle, WA",
-      period: "2000 - 2004",
-      details: [
-        "Focus: Algorithms, Data Structures, Systems Programming"
-      ]
+      degree: "Master of Entrepreneurship",
+      school: "Cambridge University",
+      location: "UK",
+      period: "2024",
+      details: []
+    },
+    {
+      degree: "PhD in Computer Science",
+      school: "University of Technology Sydney",
+      location: "NSW, Australia",
+      period: "2008",
+      details: []
+    },
+    {
+      degree: "Bachelor of Computer System Engineering (Hons)",
+      school: "La Trobe University",
+      location: "Bundoora, VIC, Australia",
+      period: "2002",
+      details: []
+    },
+    {
+      degree: "Bachelor of Computer Engineering",
+      school: "Nanyang Technological University",
+      location: "Singapore",
+      period: "1998-2000",
+      details: []
     }
   ];
 
@@ -39,7 +55,7 @@ const Education = () => {
             </div>
             <div className="education-period">{edu.period}</div>
           </header>
-          {edu.details && (
+          {edu.details && edu.details.length > 0 && (
             <ul className="education-details">
               {edu.details.map((detail, detailIndex) => (
                 <li key={detailIndex}>{detail}</li>

@@ -3,28 +3,35 @@ import React from 'react';
 const Awards = () => {
   const awards = [
     {
-      title: "Microsoft Gold Star Award",
-      organization: "Microsoft",
-      year: "2012",
-      details: "Awarded for exceptional contributions to the Bing Core Index Platform project"
+      title: "Australian Computer Society (ACS) Student Award",
+      organization: "Australian Computer Society",
+      year: "2003"
     },
     {
-      title: "Best Paper Award",
-      organization: "OSDI Conference",
-      year: "2016",
-      details: "Paper: 'Project Adam: Building an Efficient and Scalable Deep Learning Training System'"
+      title: "Most Outstanding Honours Student in Computer Science",
+      organization: "La Trobe University",
+      year: "2003"
     },
     {
-      title: "Microsoft Engineering Excellence Award",
-      organization: "Microsoft",
-      year: "2008",
-      details: "Recognized for improving Windows Live Messenger server availability to 99.9%"
+      title: "Best 3rd Year Student in Computer System Engineering",
+      organization: "La Trobe University",
+      year: "2002"
+    },
+    {
+      title: "Dean's Honours List",
+      organization: "Faculty of Science, Technology and Engineering, La Trobe University",
+      year: "2001-2003"
+    },
+    {
+      title: "Golden Key Honours Society Award",
+      organization: "Golden Key International Honour Society",
+      year: "2001"
     }
   ];
 
   return (
     <section className="section">
-      <h2 className="section-title">Awards & Recognition</h2>
+      <h2 className="section-title">Awards & Achievements</h2>
       {awards.map((award, index) => (
         <article key={index} className="award-item">
           <header className="award-header">
@@ -37,7 +44,6 @@ const Awards = () => {
               </div>
             </div>
           </header>
-          <p className="award-details">{award.details}</p>
         </article>
       ))}
     </section>
