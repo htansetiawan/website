@@ -30,9 +30,8 @@ An accomplished engineering leader with expertise in Machine Learning and a prov
 **Co-founder/CTO/Investor, 2017 - Present**
 - Founded an AI technology startup focusing on Data Labeling as a Service.
 - Raised $1M from East Ventures and $5.3M from PSL Venture & Mosaic Venture.
-- Took a sabbatical in 2019 due to health reasons.
 - Led R&D on Human+Machine orchestration and programmatic workflow.
-- Sold the company through a private equity deal to super.ai.
+- Later renamed into super.ai
 
 ### **Microsoft Research, Redmond**
 **Principal Software Design Engineer, Summer 2014 – 2016**
