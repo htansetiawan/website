@@ -3,38 +3,43 @@ import React from 'react';
 const Awards = () => {
   const awards = [
     {
-      year: "2003",
-      title: "Australian Computer Society (ACS) Student Award"
+      title: "Microsoft Gold Star Award",
+      organization: "Microsoft",
+      year: "2012",
+      details: "Awarded for exceptional contributions to the Bing Core Index Platform project"
     },
     {
-      year: "2003",
-      title: "Most Outstanding Honours Student in Computer Science at La Trobe University"
+      title: "Best Paper Award",
+      organization: "OSDI Conference",
+      year: "2016",
+      details: "Paper: 'Project Adam: Building an Efficient and Scalable Deep Learning Training System'"
     },
     {
-      year: "2002",
-      title: "Best 3rd Year Student in Computer System Engineering at La Trobe University"
-    },
-    {
-      year: "2001-2003",
-      title: "Dean's Honours List, Faculty of Science, Technology, and Engineering, La Trobe University"
-    },
-    {
-      year: "2001",
-      title: "Golden Key Honours Society Award"
+      title: "Microsoft Engineering Excellence Award",
+      organization: "Microsoft",
+      year: "2008",
+      details: "Recognized for improving Windows Live Messenger server availability to 99.9%"
     }
   ];
 
   return (
-    <section className="mb-12">
-      <h2 className="text-3xl font-bold mb-6 text-primary">Awards & Achievements</h2>
-      <div className="space-y-4">
-        {awards.map((award, index) => (
-          <div key={index} className="flex gap-4 items-baseline p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors">
-            <span className="text-accent font-semibold whitespace-nowrap">{award.year}</span>
-            <span className="text-gray-700">{award.title}</span>
-          </div>
-        ))}
-      </div>
+    <section className="section">
+      <h2 className="section-title">Awards & Recognition</h2>
+      {awards.map((award, index) => (
+        <article key={index} className="award-item">
+          <header className="award-header">
+            <div className="award-main">
+              <h3 className="award-title">{award.title}</h3>
+              <div className="award-meta">
+                <span className="award-org">{award.organization}</span>
+                <span className="separator">•</span>
+                <span className="award-year">{award.year}</span>
+              </div>
+            </div>
+          </header>
+          <p className="award-details">{award.details}</p>
+        </article>
+      ))}
     </section>
   );
 };

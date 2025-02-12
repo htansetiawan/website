@@ -3,19 +3,32 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="header">
-      <div className="container">
-        <h1>Henry Tan Setiawan</h1>
-        <div className="social-links">
-          <a href="https://www.linkedin.com/in/henrytansetiawan" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a href="https://github.com/htansetiawan" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            GitHub
-          </a>
+      <div className="header-content">
+        <img 
+          src="/henrytan_profile.jpeg" 
+          alt="Henry Tan Setiawan"
+          className="profile-image"
+        />
+        <div className="header-text">
+          <h1 className="name">Henry Tan Setiawan</h1>
+          <div className="title">Principal Engineer at Amazon • AI Infrastructure, Tools & Systems</div>
+          <div className="contact-links">
+            <a 
+              href="https://www.linkedin.com/in/henry-tan" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <span className="separator">•</span>
+            <a 
+              href="https://github.com/htansetiawan" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </header>

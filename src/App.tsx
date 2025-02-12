@@ -4,16 +4,18 @@ import Summary from './components/Summary';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Awards from './components/Awards';
+import Publications from './components/Publications';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header />
-      <main className="container">
+      <main>
         <Summary />
         <Experience />
         <Education />
         <Awards />
+        <Publications />
       </main>
       <footer className="footer">
         <div className="container">
@@ -22,6 +24,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
